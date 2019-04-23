@@ -8,3 +8,11 @@
 - MySQL
 - ...
 
+## Demo
+
+```shell
+$ sniffer eth0 mysql
+```
+
+![sniffer](http://img.zhangz.tech/sniffer.gif)
+
