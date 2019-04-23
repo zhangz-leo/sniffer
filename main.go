@@ -99,7 +99,9 @@ func main() {
 
 		// tcp 层
 		tcp := packet.TransportLayer().(*layers.TCP)
-
+		if 0 == len(tcp.Payload) {
+			continue
+		}
 		if ipAddr == "" {
 			if addr, ok := RunnerMap[dbtype].GetIP(tcp, ip); ok{
 				ipAddr = addr
